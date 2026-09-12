@@ -5,7 +5,7 @@ import numpy as np
 import streamlit as st
 from groq import Groq
 
-st.set_page_config(page_title="Renewable Grid Operations Agent", page_icon="⚡", layout="wide")
+st.set_page_config(page_title="Smart Grid Operational Agent", page_icon="⚡", layout="wide")
 
 REQUIRED_COLUMNS = [
     "hour", "load_mw", "solar_mw", "wind_mw",
@@ -313,7 +313,7 @@ When scenario data is supplied, explicitly compare base case and scenario.
 
 # ---------- STREAMLIT UI ----------
 
-st.title("⚡ Renewable Grid Operations Agent")
+st.title("⚡ Smart Grid Operational Agent")
 st.caption("AI-assisted decision support for renewable-integrated power-system operation")
 
 uploaded = st.file_uploader("Upload the 24-hour grid input CSV", type=["csv"])
